@@ -19,6 +19,8 @@
             padding: 10px 20px;
             margin-top: 20px;
             cursor: pointer;
+            background-color: green;
+            color: white;
         }
     </style>
 </head>
@@ -29,9 +31,11 @@
     <button onclick="updateText()">Click Me</button>
 
     <script>
+        let count = 0;
         function updateText() {
+            count++;
             document.getElementById('message').innerText =
-                "Member 3 updated this message with JavaScript!";
+                "Button clicked " + count + " times!";
         }
     </script>
 </body>
