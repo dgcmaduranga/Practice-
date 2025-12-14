@@ -15,10 +15,24 @@
             font-size: 18px;
             color: darkslategray;
         }
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <h1>Welcome to Our Team Project</h1>
     <p id="message">This text will be updated by other members.</p>
+
+    <button onclick="updateText()">Click Me</button>
+
+    <script>
+        function updateText() {
+            document.getElementById('message').innerText =
+                "Member 3 updated this message with JavaScript!";
+        }
+    </script>
 </body>
 </html>
